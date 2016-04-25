@@ -1,0 +1,366 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DLL_Debug|Win32">
+      <Configuration>DLL_Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DLL_Release|Win32">
+      <Configuration>DLL_Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{C81A8F3F-1300-49B5-8002-BB716237F19A}</ProjectGuid>
+    <RootNamespace>IccSkin</RootNamespace>
+    <Keyword>MFCDLLProj</Keyword>
+    <SccProjectName>
+    </SccProjectName>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DLL_Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DLL_Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DLL_Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DLL_Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)Build\bin\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)Build\obj\$(Configuration)\$(ProjectName)\</IntDir>
+    <TargetName>$(ProjectName)D</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DLL_Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)Build\bin\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)Build\obj\$(Configuration)\$(ProjectName)\</IntDir>
+    <TargetName>$(ProjectName)D</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)Build\bin\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)Build\obj\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DLL_Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)Build\bin\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)Build\obj\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;CODE_ANALYSIS;SB_API_EXPORT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>./control;resizabledlg;</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ModuleDefinitionFile>.\IccSkin.def</ModuleDefinitionFile>
+      <IgnoreSpecificDefaultLibraries>LIBCMTD.lib;LIBC.lib</IgnoreSpecificDefaultLibraries>
+      <AdditionalLibraryDirectories>$(OutDir)</AdditionalLibraryDirectories>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0412</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Lib>
+      <AdditionalDependencies>
+      </AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(OutDir)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>
+      </IgnoreSpecificDefaultLibraries>
+      <AdditionalOptions> /VERBOSE:LIB %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DLL_Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_AFXEXT;CODE_ANALYSIS;SB_API_EXPORTS;CS_API_EXPORTS;_XBITMAP_SUPPORT_PNG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>./control;resizabledlg;</AdditionalIncludeDirectories>
+      <MinimalRebuild>false</MinimalRebuild>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ModuleDefinitionFile>.\IccSkinD.def</ModuleDefinitionFile>
+      <IgnoreSpecificDefaultLibraries>LIBCMTD.lib;LIBC.lib</IgnoreSpecificDefaultLibraries>
+      <AdditionalLibraryDirectories>$(OutDir)</AdditionalLibraryDirectories>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0412</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Lib>
+      <AdditionalDependencies>coolsb.lib;coolsb_detours.lib;detours.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(OutDir)</AdditionalLibraryDirectories>
+    </Lib>
+    <PostBuildEvent>
+      <Command>xcopy /y $(OutDir)$(TargetName)$(TargetExt) D:\Project\Release\$(ProjectName)\$(Configuration)\</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CODE_ANALYSIS;SB_API_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>./control;resizabledlg;</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <StringPooling>true</StringPooling>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <ModuleDefinitionFile>.\IccSkin.def</ModuleDefinitionFile>
+      <AdditionalLibraryDirectories>$(OutDir)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>
+      </AdditionalDependencies>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0412</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DLL_Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_AFXEXT;CODE_ANALYSIS;SB_API_EXPORTS;_XBITMAP_SUPPORT_PNG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>./control;resizabledlg;</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <ModuleDefinitionFile>.\IccSkin.def</ModuleDefinitionFile>
+      <AdditionalLibraryDirectories>$(OutDir)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>
+      </AdditionalDependencies>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0412</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <PostBuildEvent>
+      <Command>xcopy /y $(OutDir)$(TargetName)$(TargetExt) D:\Project\Release\$(ProjectName)\$(Configuration)\</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="IccSkin.def" />
+    <None Include="IccSkinD.def" />
+    <None Include="ReadMe.txt" />
+    <None Include="res\IccSkin.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="control\BaseSkin.cpp" />
+    <ClCompile Include="control\Calculator.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='DLL_Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='DLL_Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="control\ConvertString.cpp" />
+    <ClCompile Include="control\Drawing.cpp" />
+    <ClCompile Include="control\GDXContext.cpp" />
+    <ClCompile Include="control\ImageMap.cpp" />
+    <ClCompile Include="control\ImageMap_BG.cpp" />
+    <ClCompile Include="control\ImageMap_Mask.cpp" />
+    <ClCompile Include="control\ImageMap_Static.cpp" />
+    <ClCompile Include="control\Inifile.cpp" />
+    <ClCompile Include="control\InplaceEdit.cpp" />
+    <ClCompile Include="control\RoundSliderCtrl.cpp" />
+    <ClCompile Include="control\XBitmap.cpp" />
+    <ClCompile Include="control\XInflate.cpp" />
+    <ClCompile Include="control\XPng.cpp" />
+    <ClCompile Include="control\xSkinLabel.cpp" />
+    <ClCompile Include="control\ScintillaWnd.cpp" />
+    <ClCompile Include="control\SkinUtil.cpp" />
+    <ClCompile Include="control\Text.cpp" />
+    <ClCompile Include="control\xSkinSlider.cpp" />
+    <ClCompile Include="control\xSkinButton.cpp" />
+    <ClCompile Include="control\xSkinComboBox.cpp" />
+    <ClCompile Include="control\xSkinEdit.cpp" />
+    <ClCompile Include="control\xSkinHeaderCtrl.cpp" />
+    <ClCompile Include="control\xSkinListBox.cpp" />
+    <ClCompile Include="control\xSkinListCtrl.cpp" />
+    <ClCompile Include="control\xSkinStatic.cpp" />
+    <ClCompile Include="control\xSkinTreeCtrl.cpp" />
+    <ClCompile Include="control\xSkinText.cpp" />
+    <ClCompile Include="IccSkin.cpp" />
+    <ClCompile Include="resizabledlg\ResizableDialog.cpp" />
+    <ClCompile Include="resizabledlg\ResizableFormView.cpp" />
+    <ClCompile Include="resizabledlg\ResizableGrip.cpp" />
+    <ClCompile Include="resizabledlg\ResizableLayout.cpp" />
+    <ClCompile Include="resizabledlg\ResizableMinMax.cpp" />
+    <ClCompile Include="resizabledlg\ResizablePage.cpp" />
+    <ClCompile Include="resizabledlg\ResizablePageEx.cpp" />
+    <ClCompile Include="resizabledlg\ResizableSheet.cpp" />
+    <ClCompile Include="resizabledlg\ResizableSheetEx.cpp" />
+    <ClCompile Include="resizabledlg\ResizableState.cpp" />
+    <ClCompile Include="resizabledlg\WndShadow.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='DLL_Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='DLL_Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="control\BaseSkin.h" />
+    <ClInclude Include="control\Calculator.h" />
+    <ClInclude Include="control\ConvertString.h" />
+    <ClInclude Include="control\coolsb_detours.h" />
+    <ClInclude Include="control\coolscroll.h" />
+    <ClInclude Include="control\Define.h" />
+    <ClInclude Include="control\detours.h" />
+    <ClInclude Include="control\Drawing.h" />
+    <ClInclude Include="control\GDXContext.h" />
+    <ClInclude Include="control\ImageMap.h" />
+    <ClInclude Include="control\ImageMap_BG.h" />
+    <ClInclude Include="control\ImageMap_Mask.h" />
+    <ClInclude Include="control\ImageMap_Static.h" />
+    <ClInclude Include="control\Inifile.h" />
+    <ClInclude Include="control\InplaceEdit.h" />
+    <ClInclude Include="control\RoundSliderCtrl.h" />
+    <ClInclude Include="control\XBitmap.h" />
+    <ClInclude Include="control\XInflate.h" />
+    <ClInclude Include="control\XPng.h" />
+    <ClInclude Include="control\xSkinLabel.h" />
+    <ClInclude Include="control\ScintillaWnd.h" />
+    <ClInclude Include="control\Scrollbar.h" />
+    <ClInclude Include="control\SkinUtil.h" />
+    <ClInclude Include="control\Text.h" />
+    <ClInclude Include="control\tinystr.h" />
+    <ClInclude Include="control\tinyxml.h" />
+    <ClInclude Include="control\XMemdc.h" />
+    <ClInclude Include="control\xSkinSlider.h" />
+    <ClInclude Include="control\xSkinButton.h" />
+    <ClInclude Include="control\xSkinComboBox.h" />
+    <ClInclude Include="control\xSkinEdit.h" />
+    <ClInclude Include="control\xSkinHeaderCtrl.h" />
+    <ClInclude Include="control\xSkinListBox.h" />
+    <ClInclude Include="control\xSkinListCtrl.h" />
+    <ClInclude Include="control\xSkinStatic.h" />
+    <ClInclude Include="control\xSkinTreeCtrl.h" />
+    <ClInclude Include="control\xSkinText.h" />
+    <ClInclude Include="resizabledlg\ResizableDialog.h" />
+    <ClInclude Include="resizabledlg\ResizableFormView.h" />
+    <ClInclude Include="resizabledlg\ResizableGrip.h" />
+    <ClInclude Include="resizabledlg\ResizableLayout.h" />
+    <ClInclude Include="resizabledlg\ResizableMinMax.h" />
+    <ClInclude Include="resizabledlg\ResizablePage.h" />
+    <ClInclude Include="resizabledlg\ResizablePageEx.h" />
+    <ClInclude Include="resizabledlg\ResizableSheet.h" />
+    <ClInclude Include="resizabledlg\ResizableSheetEx.h" />
+    <ClInclude Include="resizabledlg\ResizableState.h" />
+    <ClInclude Include="resizabledlg\WndShadow.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="IccSkin.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\coolsb\coolsb.vcxproj">
+      <Project>{53c1eb36-9626-43c0-8e6d-e80dedae1fd7}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\coolsb_detours\coolsb_detours.vcxproj">
+      <Project>{a57363a9-2e3d-4365-8167-f6eb5e44c0f9}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\tinyxml\tinyxml_lib.vcxproj">
+      <Project>{c406daec-0886-4771-8dea-9d7329b46cc1}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="IccSkin.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

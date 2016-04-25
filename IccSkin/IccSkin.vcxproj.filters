@@ -1,0 +1,323 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="control">
+      <UniqueIdentifier>{fd92e04b-7226-4c52-9846-720498e73444}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resizabledlg">
+      <UniqueIdentifier>{8d8566e3-b593-47e5-958a-360e5e65f1bd}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="IccSkin.def">
+      <Filter>소스 파일</Filter>
+    </None>
+    <None Include="res\IccSkin.rc2">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="IccSkinD.def">
+      <Filter>소스 파일</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="IccSkin.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="control\BaseSkin.cpp">
+      <Filter>control</Filter>
+    </ClCompile>
+    <ClCompile Include="control\Drawing.cpp">
+      <Filter>control</Filter>
+    </ClCompile>
+    <ClCompile Include="control\GDXContext.cpp">
+      <Filter>control</Filter>
+    </ClCompile>
+    <ClCompile Include="control\ImageMap.cpp">
+      <Filter>control</Filter>
+    </ClCompile>
+    <ClCompile Include="control\ImageMap_BG.cpp">
+      <Filter>control</Filter>
+    </ClCompile>
+    <ClCompile Include="control\ImageMap_Mask.cpp">
+      <Filter>control</Filter>
+    </ClCompile>
+    <ClCompile Include="control\ImageMap_Static.cpp">
+      <Filter>control</Filter>
+    </ClCompile>
+    <ClCompile Include="control\Inifile.cpp">
+      <Filter>control</Filter>
+    </ClCompile>
+    <ClCompile Include="control\InplaceEdit.cpp">
+      <Filter>control</Filter>
+    </ClCompile>
+    <ClCompile Include="control\ScintillaWnd.cpp">
+      <Filter>control</Filter>
+    </ClCompile>
+    <ClCompile Include="control\SkinUtil.cpp">
+      <Filter>control</Filter>
+    </ClCompile>
+    <ClCompile Include="control\Text.cpp">
+      <Filter>control</Filter>
+    </ClCompile>
+    <ClCompile Include="control\xSkinButton.cpp">
+      <Filter>control</Filter>
+    </ClCompile>
+    <ClCompile Include="control\xSkinComboBox.cpp">
+      <Filter>control</Filter>
+    </ClCompile>
+    <ClCompile Include="control\xSkinEdit.cpp">
+      <Filter>control</Filter>
+    </ClCompile>
+    <ClCompile Include="control\xSkinHeaderCtrl.cpp">
+      <Filter>control</Filter>
+    </ClCompile>
+    <ClCompile Include="control\xSkinListBox.cpp">
+      <Filter>control</Filter>
+    </ClCompile>
+    <ClCompile Include="control\xSkinListCtrl.cpp">
+      <Filter>control</Filter>
+    </ClCompile>
+    <ClCompile Include="control\xSkinStatic.cpp">
+      <Filter>control</Filter>
+    </ClCompile>
+    <ClCompile Include="control\xSkinTreeCtrl.cpp">
+      <Filter>control</Filter>
+    </ClCompile>
+    <ClCompile Include="resizabledlg\ResizableDialog.cpp">
+      <Filter>resizabledlg</Filter>
+    </ClCompile>
+    <ClCompile Include="resizabledlg\ResizableFormView.cpp">
+      <Filter>resizabledlg</Filter>
+    </ClCompile>
+    <ClCompile Include="resizabledlg\ResizableGrip.cpp">
+      <Filter>resizabledlg</Filter>
+    </ClCompile>
+    <ClCompile Include="resizabledlg\ResizableLayout.cpp">
+      <Filter>resizabledlg</Filter>
+    </ClCompile>
+    <ClCompile Include="resizabledlg\ResizableMinMax.cpp">
+      <Filter>resizabledlg</Filter>
+    </ClCompile>
+    <ClCompile Include="resizabledlg\ResizablePage.cpp">
+      <Filter>resizabledlg</Filter>
+    </ClCompile>
+    <ClCompile Include="resizabledlg\ResizablePageEx.cpp">
+      <Filter>resizabledlg</Filter>
+    </ClCompile>
+    <ClCompile Include="resizabledlg\ResizableSheet.cpp">
+      <Filter>resizabledlg</Filter>
+    </ClCompile>
+    <ClCompile Include="resizabledlg\ResizableSheetEx.cpp">
+      <Filter>resizabledlg</Filter>
+    </ClCompile>
+    <ClCompile Include="resizabledlg\ResizableState.cpp">
+      <Filter>resizabledlg</Filter>
+    </ClCompile>
+    <ClCompile Include="control\ConvertString.cpp">
+      <Filter>control</Filter>
+    </ClCompile>
+    <ClCompile Include="control\xSkinText.cpp">
+      <Filter>control</Filter>
+    </ClCompile>
+    <ClCompile Include="control\xSkinLabel.cpp">
+      <Filter>control</Filter>
+    </ClCompile>
+    <ClCompile Include="control\xSkinSlider.cpp">
+      <Filter>control</Filter>
+    </ClCompile>
+    <ClCompile Include="control\RoundSliderCtrl.cpp">
+      <Filter>control</Filter>
+    </ClCompile>
+    <ClCompile Include="resizabledlg\WndShadow.cpp">
+      <Filter>resizabledlg</Filter>
+    </ClCompile>
+    <ClCompile Include="control\Calculator.cpp">
+      <Filter>control</Filter>
+    </ClCompile>
+    <ClCompile Include="control\XBitmap.cpp">
+      <Filter>control</Filter>
+    </ClCompile>
+    <ClCompile Include="control\XPng.cpp">
+      <Filter>control</Filter>
+    </ClCompile>
+    <ClCompile Include="control\XInflate.cpp">
+      <Filter>control</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="control\BaseSkin.h">
+      <Filter>control</Filter>
+    </ClInclude>
+    <ClInclude Include="control\coolsb_detours.h">
+      <Filter>control</Filter>
+    </ClInclude>
+    <ClInclude Include="control\coolscroll.h">
+      <Filter>control</Filter>
+    </ClInclude>
+    <ClInclude Include="control\Define.h">
+      <Filter>control</Filter>
+    </ClInclude>
+    <ClInclude Include="control\detours.h">
+      <Filter>control</Filter>
+    </ClInclude>
+    <ClInclude Include="control\Drawing.h">
+      <Filter>control</Filter>
+    </ClInclude>
+    <ClInclude Include="control\GDXContext.h">
+      <Filter>control</Filter>
+    </ClInclude>
+    <ClInclude Include="control\ImageMap.h">
+      <Filter>control</Filter>
+    </ClInclude>
+    <ClInclude Include="control\ImageMap_BG.h">
+      <Filter>control</Filter>
+    </ClInclude>
+    <ClInclude Include="control\ImageMap_Mask.h">
+      <Filter>control</Filter>
+    </ClInclude>
+    <ClInclude Include="control\ImageMap_Static.h">
+      <Filter>control</Filter>
+    </ClInclude>
+    <ClInclude Include="control\Inifile.h">
+      <Filter>control</Filter>
+    </ClInclude>
+    <ClInclude Include="control\InplaceEdit.h">
+      <Filter>control</Filter>
+    </ClInclude>
+    <ClInclude Include="control\ScintillaWnd.h">
+      <Filter>control</Filter>
+    </ClInclude>
+    <ClInclude Include="control\Scrollbar.h">
+      <Filter>control</Filter>
+    </ClInclude>
+    <ClInclude Include="control\SkinUtil.h">
+      <Filter>control</Filter>
+    </ClInclude>
+    <ClInclude Include="control\Text.h">
+      <Filter>control</Filter>
+    </ClInclude>
+    <ClInclude Include="control\XMemdc.h">
+      <Filter>control</Filter>
+    </ClInclude>
+    <ClInclude Include="control\xSkinButton.h">
+      <Filter>control</Filter>
+    </ClInclude>
+    <ClInclude Include="control\xSkinComboBox.h">
+      <Filter>control</Filter>
+    </ClInclude>
+    <ClInclude Include="control\xSkinEdit.h">
+      <Filter>control</Filter>
+    </ClInclude>
+    <ClInclude Include="control\xSkinHeaderCtrl.h">
+      <Filter>control</Filter>
+    </ClInclude>
+    <ClInclude Include="control\xSkinListBox.h">
+      <Filter>control</Filter>
+    </ClInclude>
+    <ClInclude Include="control\xSkinListCtrl.h">
+      <Filter>control</Filter>
+    </ClInclude>
+    <ClInclude Include="control\xSkinStatic.h">
+      <Filter>control</Filter>
+    </ClInclude>
+    <ClInclude Include="control\xSkinTreeCtrl.h">
+      <Filter>control</Filter>
+    </ClInclude>
+    <ClInclude Include="resizabledlg\ResizableDialog.h">
+      <Filter>resizabledlg</Filter>
+    </ClInclude>
+    <ClInclude Include="resizabledlg\ResizableFormView.h">
+      <Filter>resizabledlg</Filter>
+    </ClInclude>
+    <ClInclude Include="resizabledlg\ResizableGrip.h">
+      <Filter>resizabledlg</Filter>
+    </ClInclude>
+    <ClInclude Include="resizabledlg\ResizableLayout.h">
+      <Filter>resizabledlg</Filter>
+    </ClInclude>
+    <ClInclude Include="resizabledlg\ResizableMinMax.h">
+      <Filter>resizabledlg</Filter>
+    </ClInclude>
+    <ClInclude Include="resizabledlg\ResizablePage.h">
+      <Filter>resizabledlg</Filter>
+    </ClInclude>
+    <ClInclude Include="resizabledlg\ResizablePageEx.h">
+      <Filter>resizabledlg</Filter>
+    </ClInclude>
+    <ClInclude Include="resizabledlg\ResizableSheet.h">
+      <Filter>resizabledlg</Filter>
+    </ClInclude>
+    <ClInclude Include="resizabledlg\ResizableSheetEx.h">
+      <Filter>resizabledlg</Filter>
+    </ClInclude>
+    <ClInclude Include="resizabledlg\ResizableState.h">
+      <Filter>resizabledlg</Filter>
+    </ClInclude>
+    <ClInclude Include="control\ConvertString.h">
+      <Filter>control</Filter>
+    </ClInclude>
+    <ClInclude Include="control\tinyxml.h">
+      <Filter>control</Filter>
+    </ClInclude>
+    <ClInclude Include="control\tinystr.h">
+      <Filter>control</Filter>
+    </ClInclude>
+    <ClInclude Include="control\xSkinText.h">
+      <Filter>control</Filter>
+    </ClInclude>
+    <ClInclude Include="control\xSkinLabel.h">
+      <Filter>control</Filter>
+    </ClInclude>
+    <ClInclude Include="control\xSkinSlider.h">
+      <Filter>control</Filter>
+    </ClInclude>
+    <ClInclude Include="control\RoundSliderCtrl.h">
+      <Filter>control</Filter>
+    </ClInclude>
+    <ClInclude Include="resizabledlg\WndShadow.h">
+      <Filter>resizabledlg</Filter>
+    </ClInclude>
+    <ClInclude Include="control\Calculator.h">
+      <Filter>control</Filter>
+    </ClInclude>
+    <ClInclude Include="control\XBitmap.h">
+      <Filter>control</Filter>
+    </ClInclude>
+    <ClInclude Include="control\XPng.h">
+      <Filter>control</Filter>
+    </ClInclude>
+    <ClInclude Include="control\XInflate.h">
+      <Filter>control</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="IccSkin.rc">
+      <Filter>리소스 파일</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>
